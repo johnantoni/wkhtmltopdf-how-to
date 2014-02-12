@@ -6,7 +6,8 @@ original article [http://stackoverflow.com/a/10931279](http://stackoverflow.com/
 
 #### install
 
-* download, open and drag to Applications
-* then install it via:
+First download, open and drag to Applications
+
+Then:
 
     cd /usr/local/bin && sudo ln -s /Applications/wkhtmltopdf.app/Contents/MacOS/wkhtmltopdf wkhtmltopdf
