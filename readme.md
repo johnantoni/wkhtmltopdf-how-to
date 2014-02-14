@@ -12,7 +12,7 @@ Then:
 
     cd /usr/local/bin && sudo ln -s /Applications/wkhtmltopdf.app/Contents/MacOS/wkhtmltopdf wkhtmltopdf
 
-#### notes
+#### issues
 
 * will not support images from https locations
 * does support background-image replacement
@@ -20,6 +20,8 @@ Then:
 * position: absolute issues
 
 For complex layouts suggest using inline styling or less complex styles, for table data use tables rather than inline lists.
+
+#### running
 
 Rather than downloading each file again and again and getting ...(1).pdf, ...(2).pdf you can use wget to download the pdf and overwrite the original
 
