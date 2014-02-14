@@ -14,9 +14,14 @@ Then:
 
 #### notes
 
-* you cannot use background-image or any image replacement for styling
+* will not support images from https locations
+* does support background-image replacement
+* margin attribute issues
+* position: absolute issues
 
-rather than downloading each file again and again and getting ...(1).pdf, ...(2).pdf you can use wget to download the pdf and overwrite the original
+For complex layouts suggest using inline styling or less complex styles, for table data use tables rather than inline lists.
+
+Rather than downloading each file again and again and getting ...(1).pdf, ...(2).pdf you can use wget to download the pdf and overwrite the original
 
     wget -N http://localhost:3000/report/pdf.pdf
     => outputs to pdf.pdf
