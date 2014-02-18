@@ -42,6 +42,8 @@ or create the file and run a local webserver to host it
     ...
     meta[content="http://localhost:8000/footer.html" name="pdfkit-footer-html"]
 
+note, no css from the parent file will be dragged in to the header/footer, for this you'll have to use inline styling.
+
 #### running
 
 Rather than downloading each file again and again and getting ...(1).pdf, ...(2).pdf you can use wget to download the pdf and overwrite the original
