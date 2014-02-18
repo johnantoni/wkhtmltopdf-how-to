@@ -32,6 +32,16 @@ this won't work straight off with rails as they will be wrapped with basic auth,
 
     meta[content="http://s3.bucket.com/footer.html" name="pdfkit-footer-html"]
 
+or create the file and run a local webserver to host it
+
+    mkdir pdf
+    cd pdf
+    vim footer.html
+    ...then
+    python -m SimpleHTTPServer
+    ...
+    meta[content="http://localhost:8000/footer.html" name="pdfkit-footer-html"]
+
 #### running
 
 Rather than downloading each file again and again and getting ...(1).pdf, ...(2).pdf you can use wget to download the pdf and overwrite the original
